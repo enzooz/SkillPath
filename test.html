@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test de ruta · SkillPath</title>
+  <meta name="description" content="Test de 9 preguntas para descubrir qué ruta de aprendizaje en tecnología se ajusta mejor a vos.">
+
+  <!-- Tipografías (Google Fonts). Si no cargan, el navegador usa las de respaldo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-test">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- ===================== ENCABEZADO ===================== -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html" aria-label="SkillPath, ir al inicio">
+        <!-- Logo: dos líneas que se separan desde un punto -->
+        <svg viewBox="0 0 28 28" aria-hidden="true">
+          <path d="M3 14h8l6-8h8M11 14l6 8h8" fill="none" stroke="#10253A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="3.5" cy="14" r="2.5" fill="#D6336C"/>
+        </svg>
+        SkillPath
+      </a>
+      <nav aria-label="Principal">
+        <ul class="nav-list" id="navList">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="test.html" aria-current="true">Test</a></li>
+          <li><a href="index.html#rutas">Rutas</a></li>
+          <li><a href="index.html#recursos">Recursos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== TEST ===================== -->
+    <section id="test" class="section test-section" aria-labelledby="test-title">
+      <div class="wrap">
+        <h1 id="test-title" class="section-title">Test de 9 preguntas</h1>
+        <p class="section-lead">
+          Lleva unos 3 minutos. Elegí la opción que más se parezca a vos: no hay respuestas correctas.
+          Tus respuestas no se guardan ni se envían a ningún lado.
+        </p>
+
+        <!-- script.js dibuja acá cada pregunta y, al final, el resultado -->
+        <div class="quiz" id="quiz">
+          <noscript>Necesitás activar JavaScript para hacer el test.</noscript>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">SkillPath · Una guía orientativa: el test sugiere un punto de partida, no un destino definitivo.</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

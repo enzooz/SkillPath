@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SkillPath · Descubrí tu ruta de aprendizaje en tecnología</title>
+  <meta name="description" content="Respondé 9 preguntas y descubrí qué ruta de aprendizaje IT se ajusta mejor a vos: Frontend, Backend, Datos, UX/UI, Ciberseguridad o Cloud y DevOps.">
+
+  <!-- Tipografías (Google Fonts). Si no cargan, el navegador usa las de respaldo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- ===================== ENCABEZADO ===================== -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#inicio" aria-label="SkillPath, ir al inicio">
+        <!-- Logo: dos líneas que se separan desde un punto -->
+        <svg viewBox="0 0 28 28" aria-hidden="true">
+          <path d="M3 14h8l6-8h8M11 14l6 8h8" fill="none" stroke="#10253A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="3.5" cy="14" r="2.5" fill="#D6336C"/>
+        </svg>
+        SkillPath
+      </a>
+      <nav aria-label="Principal">
+        <ul class="nav-list" id="navList">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="test.html">Test</a></li>
+          <li><a href="#rutas">Rutas</a></li>
+          <li><a href="#recursos">Recursos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div>
+          <h1 id="hero-title">Descubrí tu ruta de aprendizaje</h1>
+          <p class="lead">
+            Si estás empezando, cambiando de carrera o queriendo especializarte en IT, respondé 9 preguntas y te
+            mostramos por dónde arrancar.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="test.html" id="ctaStart">Empezar el test</a>
+            <a class="btn btn-ghost" href="#rutas">Ver las rutas</a>
+          </div>
+        </div>
+
+        <!-- Mapa decorativo: seis líneas parten de un mismo punto -->
+        <svg class="route-map" viewBox="0 0 620 420" role="img" aria-label="Mapa con seis rutas que salen de un mismo punto de partida: Frontend, Backend, Datos, UX/UI, Ciberseguridad y Cloud y DevOps">
+          <path class="line" pathLength="1" style="stroke:var(--front)" d="M120 210 L280 50 L440 50"/>
+          <path class="line" pathLength="1" style="stroke:var(--back)"  d="M120 210 L218 112 L440 112"/>
+          <path class="line" pathLength="1" style="stroke:var(--data)"  d="M120 210 L156 174 L440 174"/>
+          <path class="line" pathLength="1" style="stroke:var(--ux)"    d="M120 210 L156 246 L440 246"/>
+          <path class="line" pathLength="1" style="stroke:var(--sec)"   d="M120 210 L218 308 L440 308"/>
+          <path class="line" pathLength="1" style="stroke:var(--cloud)" d="M120 210 L280 370 L440 370"/>
+          <path d="M44 210 H120" stroke="#10253A" stroke-width="9" stroke-linecap="round" fill="none"/>
+          <circle class="stop" cx="44" cy="210" r="11" stroke="#10253A"/>
+          <text class="you label" x="14" y="246">Vos</text>
+          <circle class="stop" cx="440" cy="50"  r="10" stroke="var(--front)"/><text class="label" x="458" y="57">Frontend</text>
+          <circle class="stop" cx="440" cy="112" r="10" stroke="var(--back)"/> <text class="label" x="458" y="119">Backend</text>
+          <circle class="stop" cx="440" cy="174" r="10" stroke="var(--data)"/> <text class="label" x="458" y="181">Datos</text>
+          <circle class="stop" cx="440" cy="246" r="10" stroke="var(--ux)"/>   <text class="label" x="458" y="253">UX/UI</text>
+          <circle class="stop" cx="440" cy="308" r="10" stroke="var(--sec)"/>  <text class="label" x="458" y="315">Ciberseguridad</text>
+          <circle class="stop" cx="440" cy="370" r="10" stroke="var(--cloud)"/><text class="label" x="458" y="377">Cloud y DevOps</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ===================== RUTAS ===================== -->
+    <section id="rutas" class="section" aria-labelledby="rutas-title">
+      <div class="wrap">
+        <h2 id="rutas-title" class="section-title">Las seis rutas</h2>
+        <p class="section-lead">Cada ruta lleva a un rol distinto. Podés cambiar de una a otra: las bases se comparten.</p>
+        <ul class="routes-list" id="routesList"></ul>
+      </div>
+    </section>
+
+    <!-- ===================== RECURSOS ===================== -->
+    <section id="recursos" class="section resources-section" aria-labelledby="recursos-title">
+      <div class="wrap">
+        <h2 id="recursos-title" class="section-title">Dónde empezar a estudiar</h2>
+        <p class="section-lead">Sitios con contenido gratuito o con una parte gratuita para practicar desde hoy.</p>
+        <ul class="resources-list" id="resourcesList"></ul>
+      </div>
+    </section>
+    <!-- ===================== CIERRE: LLEVA AL TEST ===================== -->
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="wrap">
+        <div>
+          <h2 id="cta-title">¿Todavía no sabés por dónde empezar?</h2>
+          <p>Respondé 9 preguntas y te sugerimos una ruta según tus intereses, tu nivel y tu tiempo.</p>
+        </div>
+        <a class="btn" href="test.html">Hacer el test</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">SkillPath · Una guía orientativa: el test sugiere un punto de partida, no un destino definitivo.</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
